@@ -1,5 +1,5 @@
 {
-  "homepage": "http//veljko85.github.io/Exercise-Tracker",
+  "homepage": "http//veljko85.github.io/ExerciseTracker",
   "name": "simple-training-tracker",
   "version": "0.1.0",
   "private": true,
@@ -15,8 +15,9 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "clean" : "gh-pages-clean",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

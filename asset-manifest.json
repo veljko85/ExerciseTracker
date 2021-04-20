@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/http//veljko85.github.io/ExerciseTracker/static/css/main.297a7301.chunk.css",
+    "main.js": "/http//veljko85.github.io/ExerciseTracker/static/js/main.9bd2beda.chunk.js",
+    "main.js.map": "/http//veljko85.github.io/ExerciseTracker/static/js/main.9bd2beda.chunk.js.map",
+    "runtime-main.js": "/http//veljko85.github.io/ExerciseTracker/static/js/runtime-main.237eff89.js",
+    "runtime-main.js.map": "/http//veljko85.github.io/ExerciseTracker/static/js/runtime-main.237eff89.js.map",
+    "static/js/2.60540936.chunk.js": "/http//veljko85.github.io/ExerciseTracker/static/js/2.60540936.chunk.js",
+    "static/js/2.60540936.chunk.js.map": "/http//veljko85.github.io/ExerciseTracker/static/js/2.60540936.chunk.js.map",
+    "static/js/3.96901d65.chunk.js": "/http//veljko85.github.io/ExerciseTracker/static/js/3.96901d65.chunk.js",
+    "static/js/3.96901d65.chunk.js.map": "/http//veljko85.github.io/ExerciseTracker/static/js/3.96901d65.chunk.js.map",
+    "index.html": "/http//veljko85.github.io/ExerciseTracker/index.html",
+    "static/css/main.297a7301.chunk.css.map": "/http//veljko85.github.io/ExerciseTracker/static/css/main.297a7301.chunk.css.map",
+    "static/js/2.60540936.chunk.js.LICENSE.txt": "/http//veljko85.github.io/ExerciseTracker/static/js/2.60540936.chunk.js.LICENSE.txt",
+    "static/media/logo.1364cbb4.png": "/http//veljko85.github.io/ExerciseTracker/static/media/logo.1364cbb4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.237eff89.js",
+    "static/js/2.60540936.chunk.js",
+    "static/css/main.297a7301.chunk.css",
+    "static/js/main.9bd2beda.chunk.js"
+  ]
+}

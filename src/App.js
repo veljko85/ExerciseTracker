@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Trainings from './components/Tranings'
+import Form from './components/Form'
+import About from './components/About'
+import Exercises from './components/Exercises'
+import Credits from './components/Credits.js'
 
 function App() {
+  const [trainings, setTrainings] = useState(localStorage.getItem('trainings') ? JSON.parse(localStorage.getItem('trainings')) : []);
+  localStorage.setItem('trainings', JSON.stringify(trainings));
+
+  
+const addTraining = (training) => { 
+  const id = trainings.length > 0 ? (trainings[trainings.length - 1].id + 1) : 1;
+  const newTraining = {id: id, ...training}
+  setTrainings([...trainings, newTraining]);
+}
+
+const deleteExercise = (id) => {
+    setTrainings(trainings.filter((training) => training.id !== id));
+}
+
+//localStorage.clear()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+      
+        <Header color = {'#3582E8'} />
+        <Route path='/about' component={About}/>
+        <Route path='/exercises' component={Exercises}/>
+        <Route path='/credits' component={Credits}/>
+        <Route path='/' exact render={(props) => (
+          <>
+            <Form addTraining={addTraining}/>
+            {trainings.length > 0 ? (<Trainings trainings= {trainings} onDelete={deleteExercise}/>) : (<p>You have no saved exercises</p>)}
+          </>
+        )}
+        />
+      </div>
+    </Router>
   );
 }
 

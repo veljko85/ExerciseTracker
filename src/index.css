@@ -1,13 +1,452 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body::-webkit-scrollbar {
+	width: 0;
+  }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+	overflow: -moz-scrollbars-none; 
+	-ms-overflow-style: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* placeholder color */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(255, 255, 255);
+	opacity: 0.5; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: rgb(255, 255, 255);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+	color: rgb(255, 255, 255);
+  }
+/* start - mobile style */
+
+.container { /*main-container*/
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255, 255, 255);
+	font-family: 'Poppins', sans-serif;
+}
+p {
+	font-size: 22px;
+	font-weight: 900;
+	text-align: center;
+	color: red;
+	margin-top: 50px;
+}
+/* header */
+.header-container {
+  width: 100%;
+  height: 130px;
+}
+.header {
+	width: 100%;
+	height: 80px;
+}
+.header-title {
+	font-size: 22px;
+	font-weight: 900;
+	text-align: center;
+	padding: 29px 10px;
+	color: #fff;
+	float: left;
+}
+.header-logo {
+	width: 40px;
+	float: left;
+	margin: 20px 20px;
+}
+/* navigation bar */
+.nav-bar-container {
+	width: 100%; 
+	height: 0;
+	background-color: #3582E8;
+	transition: 0.3s;
+	overflow: hidden;
+}
+/* hamburger button */
+.ham-but {
+	margin: 32.5px 25px 0 0;
+}
+/* navigation bar */
+ .nav-bar {
+	width: 100%;
+	height: 40px;
+	margin: 5px 0; 
+} 
+.nav-link-container {
+	width: 25%;
+	height: 16px; 
+	margin-top: 12px;
+	float: left;
+	font-weight: 900;
+	font-size: 16px;
+	text-align: center;
+}
+.nav-bar a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* form */
+.add-exercise-form {
+	width: 90%;
+	margin: 10px 5%;
+	height: 300px;
+	/* background-color: darkgrey; */
+}
+.input-container {
+	font-size: 18px;
+	padding: 7px 5px;
+}
+.input-container label, .input-container span {
+	color: #3582E8;
+	font-weight: 900;
+}
+.input-container input, .input-container select {
+	width: 130px;
+	height: 20px;
+	float: right;
+	margin-right: 5px;	
+	padding: 0;
+	border-radius: 15px;
+	border: 1px solid #3582E8;
+	color: rgb(255, 255, 255);
+	background-color: #3582E8;
+}
+.submit-button-holder {
+	margin-top: 50px;
+	text-align: center;
+}
+.submit-button {
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #00FF44;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 900;
+	text-align: center;
+}
+/* training section  */
+.exercise-section {
+	width: 95%;
+	margin: 10px 2.5%;
+}
+.trainingCont{
+	width: 100%;
+	/* height: 150px; */
+	margin-top: 5px;
+	border-radius: 15px;
+	border-width: 4px;
+	border-style: solid;
+	box-sizing: border-box;
+}
+.trainingCont h1{
+	/* float: left; */
+	font-size: 25px;
+	font-weight: 900;
+	padding: 10px;
+}
+.trainingCont h2{
+	float: right;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 12.5px;
+}
+.trainingCont h3{
+	font-size: 20px;
+	font-weight: 700;
+	padding: 0 0 10px 10px;
+}
+.trainingCont h4{
+	font-size: 17px;
+	font-weight: 700;
+	padding: 0 0 5px 10px;
+}
+.delete-but {
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	color: red;
+}
+.exercise-section h5 {
+	font-size: 20px;
+	font-weight: 700;
+	padding: 0 0 5px 10px;
+	color: #3582E8;
+}
+.exercise-section select {
+	width: 200px;
+	height: 23px;	
+	margin: 5px 0 0 10px;
+	border-radius: 15px;
+	border: 1px solid #3582E8;
+	color: rgb(255, 255, 255);
+	background-color: #3582E8;
+}
+.about, .exercises{
+	width: 100%;
+}
+.about h1, .exercises h1 {
+	font-size: 25px;
+	font-weight: 900;
+	color:  #3582E8;
+	padding: 10px 20px;
+}
+.about p {
+	font-size: 17px;
+	font-weight: 500;
+	color: #000;
+	padding: 10px 20px;
+	text-align: left;
+	margin-top: 10px;
+}
+.exercises h2 {
+	font-size: 20px;
+	font-weight: 900;
+	color:  #3582E8;
+	padding: 10px 20px;
+}
+.exercises h3 {
+	font-size: 15px;
+	padding: 5px 15px;
+}
+.credits {
+	width: 100%;
+	margin-top: 100px;
+}
+.credits h2{
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+.credit-icons {
+	width: 100%;
+	margin-top: 80px; 
+	text-align: center;
+}
+.credit-icon  {
+	width: 50px;
+	height: 50px;
+	padding: 0 30px;
+	color: #000;
+	text-align: center;
+}
+
+/* for devices with less width then 330px */
+@media screen and (max-width: 330px) {
+	.header {
+		height: 60px;
+	}
+	.header-logo {
+		width: 40px;
+		margin: 10px 20px;
+	}
+	.header-title {
+		font-size: 15px;
+		padding: 23px 0;
+	}
+	.input-container {
+		font-size: 15px;
+	}
+	.input-container input, .input-container select {
+		width: 100px;
+		height: 18px;
+	}
+	.trainingCont h1{
+		font-size: 22px;
+		padding: 5px;
+	}
+	.trainingCont h2{
+		font-size: 18px;
+		padding: 7px;
+	}
+	.trainingCont h3{
+		font-size: 18px;
+		padding: 0 0 5px 5px;
+	}
+	.trainingCont h4{
+		font-size: 15px;
+		padding: 0 0 3px 5px;
+	}
+	/* navigation bar */
+	/* /* .nav-bar a {
+		font-size: 12px;
+		margin-right: 20px;
+	} */
+	.ham-but {
+		margin: 22.5px 15px 0 0;
+	}
+	/* navigation bar */ 
+	.nav-link-container {
+		height: 13px; 
+		margin-top: 13.5px;
+		font-size: 13px;
+	}
+
+}
+/* for devices with width between 550px and 1024px (tablets) */
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+	/* header */
+	.header-container {
+	  height: 150px;
+	}
+	.header {
+		height: 100px;
+	}
+	.header-title {
+		font-size: 35px;
+		padding: 30px 30px;
+	}
+	.header-logo {
+		width: 60px;
+		margin: 20px 40px;
+	}
+	/* hamburger button */
+	.ham-but {
+		margin: 42.5px 35px 0 0;
+	}
+	/* navigation bar */
+	.nav-link-container {
+		height: 25px; 
+		margin-top: 7.5px;
+		font-size: 25px;
+	}
+}
+
+/* for devices with minimum width 1025px (desktop) */
+@media screen and (min-width: 1025px) {
+	.container { /*main-container*/
+		width: 1000px;
+		min-height: 100vh;
+		margin-left: calc((100% - 1000px)/2);
+		background-color:rgb(237, 240, 241)
+	}
+	p {
+		font-size: 30px;
+		margin-top: 100px;
+	}
+	/* navigation bar */
+	.nav-bar-container {
+		width: 100%; 
+		height: 20px;
+		 background-color: #3582E8;
+	}
+	/* hamburger button */
+	.ham-but {
+		display: none;
+	}
+	/* navigation bar */
+	 .nav-bar {
+		width: 60%;
+		height: 16px;
+		margin: 0 0; 
+		float: right;
+	} 
+	.nav-link-container {
+		 margin-top: 0; 
+	}
+	.nav-link-container:hover {
+		background-color: rgb(107, 157, 250);
+	}
+
+	
+	/* form */
+	.add-exercise-form {
+		width: 50%;
+		margin: 20px 25%;
+	}
+	/* training section  */
+	.exercise-section {
+		width: 70%;
+		margin: 10px 15%;
+	}
+	.exercise-section h5 {
+		font-size: 20px;
+		font-weight: 700;
+		padding: 0 0 5px 10px;
+		color: #3582E8;
+	}
+	.exercise-section select {
+		width: 200px;
+		height: 23px;	
+		margin: 5px 0 0 10px;
+		border-radius: 15px;
+		border: 1px solid #3582E8;
+		color: rgb(255, 255, 255);
+		background-color: #3582E8;
+	}
+	.about, .exercises{
+		width: 70%;
+		margin-left: 15%;
+	
+	}
+	.credits {
+		width: 100%;
+		margin-top: 100px;
+	}
+	.credits h2{
+		font-size: 20px;
+		font-weight: 700;
+		text-align: center;
+	}
+	.credit-icons {
+		width: 100%;
+		margin-top: 80px; 
+		text-align: center;
+	}
+	.credit-icon  {
+		width: 50px;
+		height: 50px;
+		padding: 0 30px;
+		color: #000;
+		text-align: center;
+	}
+	
 }

@@ -31,7 +31,7 @@ const deleteExercise = (id) => {
         <Route path='/about' component={About}/>
         <Route path='/exercises' component={Exercises}/>
         <Route path='/credits' component={Credits}/>
-        <Route path='/' exact render={(props) => (
+        <Route path='/ExerciseTracker' exact render={(props) => (
           <>
             <Form addTraining={addTraining}/>
             {trainings.length > 0 ? (<Trainings trainings= {trainings} onDelete={deleteExercise}/>) : (<p>You have no saved exercises</p>)}

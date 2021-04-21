@@ -28,10 +28,10 @@ const deleteExercise = (id) => {
       <div className="container">
       
         <Header color = {'#3582E8'} />
-        <Route path='/ExerciseTracker/about' component={About}/>
-        <Route path='/ExerciseTracker/exercises' component={Exercises}/>
-        <Route path='/ExerciseTracker/credits' component={Credits}/>
-        <Route path='/ExerciseTracker/home' exact render={(props) => (
+        <Route path='/about' component={About}/>
+        <Route path='/exercises' component={Exercises}/>
+        <Route path='/credits' component={Credits}/>
+        <Route path='/' exact render={(props) => (
           <>
             <Form addTraining={addTraining}/>
             {trainings.length > 0 ? (<Trainings trainings= {trainings} onDelete={deleteExercise}/>) : (<p>You have no saved exercises</p>)}

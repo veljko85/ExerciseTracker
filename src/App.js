@@ -27,7 +27,7 @@ const deleteExercise = (id) => {
     <Router>
       <div className="container">
       
-        <Header color = {'#3582E8'} />
+        <Header color = {'red'} />
         <Route path='/about' component={About}/>
         <Route path='/exercises' component={Exercises}/>
         <Route path='/credits' component={Credits}/>

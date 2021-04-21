@@ -24,8 +24,8 @@ const Header = ({color}) => {
     return (
         <div className='header-container'>
             <div className = 'header' style={{backgroundColor: color}} >
-            <Link to='/'><img className='header-logo' alt='logo' src={logo}/></Link>
-                <Link to='/'><h1 className = 'header-title'>Exercise Tracker</h1></Link>
+            <Link to='/ExerciseTracker'><img className='header-logo' alt='logo' src={logo}/></Link>
+                <Link to='/ExerciseTracker'><h1 className = 'header-title'>Exercise Tracker</h1></Link>
                 <div onClick={()=>toggleNav()}>
                     <HamButton hamColor={'#fff'} toggleButton={hamToggle}/>
                 </div>
